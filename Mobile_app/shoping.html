@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>提交订单</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/shoping.css">
+</head>
+<body>
+    <div class='topConBox'>
+        <div class='itemConent'>
+            <p>6个月不限次畅玩！239元起深圳欢乐谷半年卡重磅来袭，水陆两园+狂欢演艺+酷炫飞车...你要的欢乐由欢乐谷承包！</p>
+            <div class='itemTime'>
+                <span>活动日期：</span>
+                <ul>
+                    <li><i> 12-1</i><i>周六</i></li>
+                    <li><i> 12-1</i><i>周六</i></li>
+                    <li><i> 12-1</i><i>周六</i></li>
+                    <li class='more'>更多&nbsp;&nbsp;&gt;</li>
+                </ul>
+            </div>
+        </div>
+        <div class='setMenu'>
+            <span class='setMenuT'>可选套餐:</span>
+            <div class='setMenuI'>
+                <span>老人/儿童半年卡</span><i></i>
+            </div>
+            <div class='setMenuI'>
+                <span>成人半年卡</span><i></i>
+            </div>
+            <div class='purchaseNum'>
+                <div class='purchaseNum1'> 
+                    <div class='purchaseNum1A'>
+                        <span>活动价:</span>
+                        <i>￥198</i>
+                    </div>
+                    <div class='purchaseNum1D'>
+                        <span>原价:</span>
+                        <i>￥20000</i>
+                    </div>
+                </div>
+                <div class='purchaseNumS'>
+                    <span class='reduce'></span>
+                    <i>1</i>
+                    <span class='plus'></span>
+                </div>
+            </div>
+        </div>
+        <div class='custMess'>
+            <label>
+                <span>姓名</span>
+                <input type="text" placeholder='取票人真实姓名' class='custMessName'>
+            </label>
+            <label>
+                <span>手机号码</span>
+                <input type="text" placeholder='接收订单短信' class='custMessNum'>
+            </label>
+        </div>
+        <a href="#" class='checkCost'>
+            <span>查看费用说明、活动须知</span>
+            <i></i>
+        </a>
+        <div class='serPhone'>
+            客服电话：4008009999
+        </div>
+    </div>
+    <div class='bottmCBox'>
+       <div class='bottmCBox1'>
+           <span>总计:￥</span>
+           <i>198</i>
+       </div>
+       <div class='bottmCBox2'>
+            提交订单
+       </div>
+    </div>
+    <div class='calenderwarp'>
+        <div class='wrap'>
+            <div class='title'>
+                <i class="btn leftbtn">&lt;&lt;</i>
+                <div class='item'>
+                    <span>2018</span>
+                    <i>年</i>
+                    <span>1</span>
+                    <i>月</i>
+                </div>
+                <i class="btn rightbtn">&gt;&gt;</i>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>周一</th>
+                        <th>周二</th>
+                        <th>周三</th>
+                        <th>周四</th>
+                        <th>周五</th>
+                        <th class="redstyle">周六</th>
+                        <th class="redstyle">周日</th>
+                    </tr>
+                </thead>
+                <tbody id='TdodyDom'>
+                </tbody>
+            </table>
+        </div>
+    </div>
+	<script src='./js/jquery.js'></script>
+    <script src='./js/zepto.js'></script>
+    <script>
+        var moreTimeDom = $('.more:eq(0)');
+        console.log('获取的JQ more:', moreTimeDom[0]);
+        var calenderWarpDom = $('.calenderwarp:eq(0)');
+        console.log('获取的JQ calenderwarp:', calenderWarpDom[0]);
+        console.log();
+        moreTimeDom.click(
+            function(e){
+                // console.log('点击淡入！！！');
+                calenderWarpDom.fadeIn();
+            }
+        );
+        calenderWarpDom.click(
+            function(e){
+                // console.log('点击的target:', e.target);
+                if($(e.target).hasClass('calenderwarp')){
+                    $(this).fadeOut();
+                }
+            }
+        ) 
+    </script>
+    <script src='./js/calender.js'></script>
+</body>
+</html>

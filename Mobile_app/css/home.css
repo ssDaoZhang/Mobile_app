@@ -1,0 +1,293 @@
+/*
+顶部样式
+*/
+.titleItem1{
+    /* position: fixed; */
+    width: 100%;
+    background: #e85356;
+    height: 3.2em;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.titleTirps{
+    width:3.5em;
+    height: 3em;
+    /* background: yellow; */
+    line-height: 3em;
+    margin : 0 1.2em;
+    display: flex;
+    color:#fff;
+}
+.titleTirps .titleArrow{
+    margin-left:0.5em;
+    width: 1em;
+    height: 3em;
+    background: transparent url("../image/triangle.png") 50% 50% / contain  content-box no-repeat;
+}
+.searchItem{
+    height: 1.8em;
+    /* background: yellow; */
+    width:75%;
+    background: #fff;
+}
+.searchItem label{
+    display: flex;
+    width : 100%;
+    background: #fff; 
+    height: 1.8em;
+    border: 1px solid #ccc;
+}
+.searchItem label:focus{
+    outline: #4d90fe solid 1px;
+}
+.searchItem label i{
+    display : block;
+    width : 3em;
+    height: 1.8em;
+    background: #fff url("../image/search.png") 50% 50% / contain  content-box no-repeat;
+}
+.searchItem label input{
+    border-width: 0;
+    font-size:0.8em;
+    /* width:25em; */
+    width: calc(100% - 3em); 
+    height: 1.8em;
+    padding-left:0.8em;
+    outline:none;
+}
+/*
+中间模块
+*/
+.contentItem1{
+    width:100%;
+    /* margin:3.2em 0; */
+    height: calc(100% - 7.4em);
+    overflow-x:hidden;
+    overflow-y: scroll; 
+    -webkit-overflow-scrolling: touch;
+    /* background: #aaa; */
+}
+/*
+底部按键
+*/
+.bottomItem1{
+    /* position: fixed; */
+    /* bottom: 0;
+    left:0; */
+    width: 100%;
+    height: 4.2em;
+    background: #e85356;
+    display:flex;
+    align-items: center;
+}
+.bottombtn{
+    flex:1;
+    color:#fff;
+}
+.btnitem{
+    width:100%;
+    /* height: 50%; */
+}
+.btnitem1{
+    height: 2.4em;
+    /* background: yellow; */
+}
+.btnitem2{
+    height: 1.8em;
+    /* background: yellowgreen; */
+    line-height: 1.8em;
+    text-align: center;
+}
+.bottomItem1 .bottombtn1{
+    background: #fff;
+    color:#e85356;
+}
+.btnitem11{
+    background: transparent url("../image/home/home_act.png") 50% 50% / 1.8em 1.8em  content-box no-repeat;
+}
+.btnitem12{
+    background: transparent url("../image/home/bill.png") 50% 50% / 1.8em 1.8em  content-box no-repeat;
+}
+.btnitem13{
+    background: transparent url("../image/home/wx.png") 50% 50% / 1.8em 1.8em  content-box no-repeat;
+}
+/*
+轮播图
+*/
+.rotatImgwarp{
+    width: 100%;
+    padding-top:35%;
+    /* background: yellowgreen; */
+    position: relative;
+    overflow: hidden;
+}
+.rotatImg{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0; 
+    /* background: red; */
+}
+.imglist{
+    position: absolute;
+    top:0;
+    left:0px;
+    width: 400%;
+    height: 100%;
+    /* background: yellow;  */
+}
+.imglist:after{content:"";display:block;clear:both;}
+.imglist li{
+    width:25%;
+    height: 100%;
+    float: left;
+}
+.imglist li img{
+    width:100%;
+    height: 100%;
+}
+/*
+  主要项目展示
+*/
+.advertItem{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: center;
+    width:100%;
+    /* background: green; */
+    margin-top:1.5em;
+}
+.advertItem1{
+    width : 20%;
+    /* background: yellow; */
+    height: 4.5em;
+    color: #e85356;
+    background: #fff;
+}
+.advertItem11{
+    width : 100%;
+    height : 3em;
+    /* background: red;  */
+}
+.advertItem12{
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+}
+.advertItem111{
+    background: #fff url("../image/home/purchase.png") 50% 50% /3em 3em  content-box no-repeat; 
+}
+.advertItem112{
+    background: #fff url("../image/home/view.png") 50% 50% / 3em 3em content-box no-repeat; 
+}
+.advertItem113{
+    background: #fff url("../image/home/hotel.png") 50% 50% /3em 3em  content-box no-repeat; 
+}
+.advertItem114{
+    background: #fff url("../image/home/line.png") 50% 50% / 3em 3em  content-box no-repeat; 
+}
+.advertItem115{
+    background: #fff url("../image/home/food.png") 50% 50% / 3em 3em  content-box no-repeat; 
+}
+.advertItem116{
+    background: #fff url("../image/home/arder.png") 50% 50% / 3em 3em  content-box no-repeat; 
+}
+
+/*
+商品展示列表
+*/
+.itemList{
+    margin-top:1em;
+    width:100%;
+    padding:0 1.5em;
+}
+.itemList li{
+    width: calc(100% - 3em);
+    margin-bottom: 0.5em;
+    /* border-bottom: 1px solid #ccc; */
+    padding-top: 1.5em;
+}
+.itemList li:nth-child(n+2){
+    border-top: 1px solid #ccc;
+}
+.itemList li a{
+    width:100%;
+}
+.itemImgBox{
+    position: relative;
+    width:100%;
+    padding-top:35%;
+    margin-bottom:0.8em;
+}
+.itemImgWarp{
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+}
+.itemImgWarp img{
+    width:100%;
+    height: 100%;
+}
+.itemList li p{
+    width:100%;
+    height: 3em; 
+    line-height: 1.5em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    /* position:relative;  
+    overflow:hidden;
+    background: #fff; */
+}
+/* .itemList li p::after{
+    content:"...";
+    font-weight:bold;
+    position:absolute;
+    bottom:0;
+    right:0;
+    background: #fff;
+} */
+
+.priceBox{
+    display: flex;
+    align-items: center;
+    height: 2.5em;
+    justify-content: space-between;
+    padding-top:0.3em; 
+    /* line-height: 2em; */
+}
+.priceBoxitem1{
+    display:flex;
+    align-items: center;
+    height: 2.5em;
+}
+.priceBoxitem1 span{
+    margin-right:1em;
+    height: 2.5em;
+    line-height: 2.5em;
+    color:#e85356;
+    font-weight: bold;
+}
+.priceBoxitem1 i{
+    /* margin-right:1em; */
+    height: 2.5em;
+    line-height: 2.5em;
+    font-style: normal;
+    text-decoration:line-through;
+    color:#bbb;
+}
+.priceBoxbtn{
+    width:6em;
+    height: 2em;
+    line-height: 2em;
+    border-radius: 0.5em;
+    text-align: center;
+    background: #e85356;
+    color:#fff;
+}
